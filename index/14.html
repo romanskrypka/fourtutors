@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Личные сообщения</title>
+<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="/_st/my.css" />
+<link type="text/css" rel="StyleSheet" href="/css/media.css" />
+<link type="text/css" rel="StyleSheet" href="/css/font-awesome.min.css" />
+<link type="text/css" rel="StyleSheet" href="/css/animate.css" />
+
+
+	<link rel="stylesheet" href="/.s/src/base.min.css" />
+	<link rel="stylesheet" href="/.s/src/layer7.min.css" />
+
+	<script type="text/javascript" src="https://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=4brFGSe8LLSiSaYD9GBl8coFY1jMaW7QklBjqCL-5mPzU2iD7eUEDpatfg_VWwZhHD9l-vmY2npTK6X3ke6TyA" charset="UTF-8"></script><script src="/.s/src/jquery-1.12.4.min.js"></script>
+	
+	<script src="/.s/src/uwnd.min.js"></script>
+	<script src="//s20.ucoz.net/cgi/uutils.fcg?a=uSD&ca=2&ug=4&isp=1&r=0.501154815472518"></script>
+<script>/* --- UCOZ-JS-INIT_CODE --- */
+	window.ulb = {photoPage:"Перейти на страницу с фотографией.", closeBtn:"Закрыть", error:"Запрошенный контент не может быть загружен. Пожалуйста, попробуйте позже.", next:"Следующий", prev:"Предыдущий", btnPlay:"Начать слайдшоу", btnToggle:"Изменить размер", };
+var umoder_panel_params = { confirm_activate:'Вы действительно хотите активировать данный материал?', confirm_delete:'Вы подтверждаете удаление?', ssid:'ptgQklwb' };
+/* --- UCOZ-JS-END --- */</script>
+
+	<link rel="stylesheet" href="/.s/src/ulightbox/ulightbox.min.css" />
+	<link rel="stylesheet" href="/.s/src/moder_panel/moder_panel_new.min.css" />
+	<link rel="stylesheet" href="/.s/src/social.css" />
+	<script src="/.s/src/ulightbox/ulightbox.min.js"></script>
+	<script src="/.s/src/moder_panel/moder_scripts.min.js"></script>
+	<script>
+/* --- UCOZ-JS-DATA --- */
+window.uCoz = {"country":"RU","ssid":"ptgQklwb","site":{"domain":"4tutors.ru","id":"ett-forum","host":"tt-forum.ucoz.net"},"language":"ru"};
+/* --- UCOZ-JS-CODE --- */
+
+				jQuery(function($) {
+					$('form#pmdform [name=soll]').on('click', function() {
+						$('form#pmdform [name=s]').prop('checked', (this.checked ? true : false));
+						$('form#pmdform #dpms').css('display', (this.checked ? 'inline-block' : 'none'));
+					});
+
+					$('form#pmdform [name=s]').off().on('click', function() {
+						$('form#pmdform #dpms').css('display', (($('form#pmdform [name=s]:checked').length > 0 ) ? 'inline-block' : 'none'));
+						$('form#pmdform [name=soll]').prop('checked', (($('form#pmdform [name=s]:checked').length == $('form#pmdform [name=s]').length ) ? true : false));
+					});
+				});
+
+		function del_item(id) {
+			if (confirm('Вы подтверждаете удаление?')) {
+				_uPostForm('', {url:'/index/', type:'POST', data:{ssid:'ptgQklwb', a:'16', s:id} });
+			}
+		}
+
+		function delgroup(f) {
+			if (confirm('Вы подтверждаете удаление?')) {
+				document.getElementById('dpms').style.display = 'none';
+				var frm = eval('document.'+f);
+				_uPostForm(f, {type:'POST', url:frm.action });
+			}
+		}
+ function uSocialLogin(t) {
+			var params = {"google":{"height":600,"width":700},"yandex":{"width":870,"height":515},"ok":{"height":390,"width":710},"vkontakte":{"width":790,"height":400},"facebook":{"height":520,"width":950}};
+			var ref = escape(location.protocol + '//' + ('www.4tutors.ru' || location.hostname) + location.pathname + ((location.hash ? ( location.search ? location.search + '&' : '?' ) + 'rnd=' + Date.now() + location.hash : ( location.search || '' ))));
+			window.open('/'+t+'?ref='+ref,'conwin','width='+params[t].width+',height='+params[t].height+',status=1,resizable=1,left='+parseInt((screen.availWidth/2)-(params[t].width/2))+',top='+parseInt((screen.availHeight/2)-(params[t].height/2)-20)+'screenX='+parseInt((screen.availWidth/2)-(params[t].width/2))+',screenY='+parseInt((screen.availHeight/2)-(params[t].height/2)-20));
+			return false;
+		}
+		function TelegramAuth(user){
+			user['a'] = 9; user['m'] = 'telegram';
+			_uPostForm('', {type: 'POST', url: '/index/sub', data: user});
+		}
+/* --- UCOZ-JS-END --- */
+</script>
+
+	<style>.UhideBlockL{display:none; }</style>
+	<script type="text/javascript">new Image().src = "//counter.yadro.ru/hit;noadsru?r"+escape(document.referrer)+(screen&&";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth||screen.pixelDepth))+";u"+escape(document.URL)+";"+Date.now();</script>
+</head>
+<body>
+
+<!--U1AHEADER1Z--><div id="main">
+
+<header>
+
+<div class="h-top">
+<div class="container">
+<div class="clr">
+<div class="h-lk">
+<!-- Логотип -->
+ <a href="/"><img src="https://www.4tutors.ru/logo/tekst_i_logo.jpg" border="0" alt="p" />
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ <a href="/index/8"><span><i class="fa fa-user" aria-hidden="true"></i></span>Профиль</a>
+<a href="/index/14"><font><i class="fa fa-envelope" aria-hidden="true"></i></font> <b>0</b></a>
+<a href="/index/11-1"><i class="fa fa-cog" aria-hidden="true"></i></a>
+<a href="/index/10"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+
+
+<span class="h-lk-date">28.05.2022, 22:52</span>
+</div>
+
+
+<div class="h-curs">
+ </div>
+
+</div>
+</div>
+</div>
+
+<div class="h-header">
+<div class="container">
+ 
+ 
+ 
+ 
+ 
+<div class="tp-intro">
+<!-- Логотип и кнопки -->
+<img src="https://www.4tutors.ru/tekst.jpg" border="0" alt="p" > 
+ <a class="button" href="https://www.4tutors.ru/news/0-0-0-0-1" target="_blank">Предложить новость</a>
+ <a class="button" href="https://www.4tutors.ru/stuff/0-0-0-0-1" target="_blank">Пополнить базу специалистов</a>
+<div class="clr">
+<div class="tp-logo">
+
+
+</div>
+
+<!-- Погода -->
+<div class="tp-weather">
+ <a href="#"> </a>
+</div>
+<!-- /Погода -->
+
+
+</div>
+</div>
+
+<div class="tp-over">
+
+<div class="tp-1">
+
+<div id="mySidenav" class="sidenav">
+ 
+
+<nav class="h-menu">
+ <div id="uNMenuDiv1" class="uMenuV"><ul class="uMenuRoot">
+<li class="uWithSubmenu"><a  href="/" ><span>Главная</span></a><ul>
+<li><a  href="/index/0-2" ><span>О сайте</span></a></li>
+<li><a  href="/index/0-3" ><span>Обратная связь</span></a></li>
+<li><a  href="/blog/" ><span>Блог</span></a></li></ul></li>
+<li><a  href="/news" ><span>Все новости</span></a></li>
+<li><a  href="/forum" ><span>Форум</span></a></li>
+<li><a  href="/board/" ><span>Доска объявлений</span></a></li>
+<li><a  href="/stuff/" ><span>База специалистов</span></a></li>
+<li class="uWithSubmenu"><a  href="javascript:;" ><span>Каталоги</span></a><ul>
+<li><a  href="/dir/" ><span>Каталог сайтов</span></a></li>
+<li><a  href="/load/" ><span>Каталог файлов</span></a></li>
+<li><a  href="/publ/" ><span>Каталог статей</span></a></li></ul></li></ul></div>
+<div class="h-menu-lk">
+
+<ul>
+<li><a href="/index/8">Профиль</a></li>
+<li><a href="/index/14">Сообщения (0)</a></li>
+<li><a href="/index/10">Выйти</a></li>
+</ul>
+
+</div>
+
+</div>
+
+
+
+
+</nav>
+<div class="h-menu-button" onclick="$('.h-menu').slideToggle(0)"><div><span class="hm1"></span><span class="hm2"></span><span class="hm3"></span></div></div>
+
+</div>
+
+<div class="tp-2">
+
+<a href="javascript:;" onclick="$('.h-form-search').slideToggle(200);$('#focused').focus()"><i class="fa fa-search"></i></a>
+
+
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<div class="h-form-search"><div class="container"><form action="/search/"><input type="text" id="focused" name="q" placeholder="Ваш запрос Ctrl + Enter" /></form></div></div><!--/U1AHEADER1Z-->
+
+<div class="top-pad">
+<div class="container">
+<div class="h-pages">
+<div class="h-content">
+
+ <!-- <body> --><div align="center" style="position: relative;">
+	<div class="pbarContainer pm-informer" data-title="Сообщений 0 из 200">
+		<div class="pbarFiller" style="width:0%;"></div>
+	</div>
+	<div align="left">[ <a class="pmCatLinkActive" href="/index/14-0-0">Принятые(<b>0</b>)</a> | <a class="pmCatLink" href="/index/14-0-1">Отправленные(<b>0</b>)</a> | <a class="pmCatLink" href="/index/14-0-0-1">Отправить ЛС</a> | <a class="pmCatLink" href="/index/14-0-5">Массовая рассылка</a> |  <a class="pmCatLink" href="/index/8">Мой профиль</a> ]</div>
+	<hr />
+			<form method="post" name="pmdform" id="pmdform" action="/index/" style="margin:0px" onsubmit="delgroup('pmdform'); return false;">
+				<table border="0" cellpadding="2" cellspacing="1" width="100%">
+				<tr><td align="center">Сообщений нет</td></tr>
+				</table>
+
+				<input type="hidden" name="a"    value="16" />
+				<input type="hidden" name="t"    value="0" />
+				<input type="hidden" name="ssid" value="ptgQklwb" />
+			</form>	<hr />
+		<form method="post" action="/index/" name="fuser" style="margin:0px">
+			<table border="0" cellpadding="4" cellspacing="1" width="100%">
+				<tr><td align="center">
+					<a href="/index/15-1"><input type="button" class="allUsersBtn" style="width:150px;" value="Список пользователей" /></a>&nbsp;
+					<input type="text" class="uSearchFl" name="user" style="width:240px;text-align:center;" size="50" value="Логин" onclick="if (this.value == 'Логин') {this.value='';}" maxlength="50" />
+					<input type="submit" class="uSearchFlSbm" style="width:150px;" value="Найти пользователей" /></td></tr>
+			</table>
+			<input type="hidden" name="a" value="15" />
+		</form></div><!-- </body> -->
+
+</div>
+
+
+<div class="h-sidebar">
+<div class="clr">
+<!--U1CLEFTER1Z--><!-- <block2> -->
+
+<!-- </block2> -->
+
+<!-- <block3> -->
+
+<!-- </block3> -->
+ 
+
+<!-- <block4> -->
+
+<!-- </block4> -->
+
+<!-- <block7> -->
+
+<!-- </block7> -->
+
+<!-- <block8> -->
+
+<!-- </block8> -->
+
+<!-- <block9> -->
+
+<!-- </block9> -->
+
+<!-- <block10> -->
+
+<div class="h-block">
+<div class="h-block-in">
+<div class="h-block-header"><!-- <bt> --><!--<s5207>-->Наш опрос<!--</s>--><!-- </bt> --></div>
+<div class="h-block-content"><!-- <bc> --><script>function pollnow616(){document.getElementById('PlBtn616').disabled=true;_uPostForm('pollform616',{url:'/poll/',type:'POST'});}function polll616(id,i){_uPostForm('',{url:'/poll/'+id+'-1-'+i+'-616',type:'GET'});}</script><div id="pollBlock616"><form id="pollform616" onsubmit="pollnow616();return false;"><div class="pollBlock">
+<div class="pollQue"><b>Оцените наш ресурс</b></div>
+<div class="pollAns"><div class="answer"><input id="a6161" type="radio" name="answer" value="1" style="vertical-align:middle;" /> <label style="vertical-align:middle;display:inline;" for="a6161">Отлично</label></div>
+<div class="answer"><input id="a6162" type="radio" name="answer" value="2" style="vertical-align:middle;" /> <label style="vertical-align:middle;display:inline;" for="a6162">Полезно</label></div>
+<div class="answer"><input id="a6163" type="radio" name="answer" value="3" style="vertical-align:middle;" /> <label style="vertical-align:middle;display:inline;" for="a6163">Непонятно</label></div>
+<div class="answer"><input id="a6164" type="radio" name="answer" value="4" style="vertical-align:middle;" /> <label style="vertical-align:middle;display:inline;" for="a6164">Ужасно</label></div>
+<div id="pollSbm616" class="pollButton"><input class="pollBut" id="PlBtn616" type="submit" value="Оценить" /></div>
+<input type="hidden" name="ssid" value="ptgQklwb" />
+<input type="hidden" name="id"   value="1" />
+<input type="hidden" name="a"    value="1" />
+<input type="hidden" name="ajax" value="616" /></div>
+<div class="pollLnk"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('PollR','Результаты опроса',660,200,{closeonesc:1,maxh:400},{url:'/poll/1'});return false;">Результаты</a> | <a href="javascript:;" rel="nofollow" onclick="new _uWnd('PollA','Архив опросов',660,250,{closeonesc:1,maxh:400,max:1,min:1},{url:'/poll/0-2'});return false;">Архив опросов</a> </div>
+<div class="pollTot">Всего ответов: <b>4</b></div>
+</div></form></div><!-- </bc> --></div>
+</div>
+</div>
+
+<!-- </block10> -->
+
+<!-- <block11> -->
+
+<div class="h-block">
+<div class="h-block-in">
+<div class="h-block-header"><!-- <bt> --><!--<s3199>-->Мини-чат<!--</s>--><!-- </bt> --></div>
+<div class="h-block-content"><!-- <bc> --><iframe id="mchatIfm2" style="width:100%;height:300px" frameborder="0" scrolling="auto" hspace="0" vspace="0" allowtransparency="true" src="/mchat/"></iframe>
+<script>
+	function sbtFrmMC991(f) {
+		document.querySelector('#mchatBtn').style.display = 'none';
+		document.querySelector('#mchatAjax').style.display = '';
+		_uPostForm('MCaddFrm', {type:'POST', url:'/mchat/?806205612.494964', } );
+	}
+
+	function countMessLength() {
+		var message = document.querySelector('#MCaddFrm').mcmessage.value;
+		var rst = 200 - message.length;
+		if (rst < 0) {
+			rst = 0;
+			message = message.substr(0, 200);
+		}
+		document.querySelector('#jeuwu28').innerHTML = rst;
+	}
+
+	var tID7174 = -1;
+	var tAct7174 = false;
+
+	function setT7174(s) {
+		var v = parseInt(s.options[s.selectedIndex].value);
+		document.cookie = "mcrtd=" + s.selectedIndex + "; path=/";
+		if (tAct7174) {
+			clearInterval(tID7174);
+			tAct7174 = false;
+		}
+		if (v > 0) {
+			tID7174 = setInterval("document.getElementById('mchatIfm2').src='/mchat/?' + Date.now();", v*1000 );
+			tAct7174 = true;
+		}
+	}
+
+	function initSel7174() {
+		var res = document.cookie.match(/(\W|^)mcrtd=([0-9]+)/);
+		var s = $("#mchatRSel")[0];
+		if (res && !!s) {
+			s.selectedIndex = parseInt(res[2]);
+			setT7174(s);
+		}
+		$("#mchatMsgF").on('keydown', function(e) {
+			if (e.keyCode == 13 && e.ctrlKey && !e.shiftKey) {
+				e.preventDefault();
+				sbtFrmMC991();
+			}
+		});
+	}
+</script>
+<form id="MCaddFrm" onsubmit="sbtFrmMC991(this ); return false;">
+	
+<table border="0" cellpadding="1" cellspacing="1" width="100%">
+<!--ВОТ ТУТ кнопка автообновления-->
+ <!--<tr><td><select id="mchatRSel" onchange="setT7174(this);" class="mchat" title="Автообновление" style="font-size:7pt;"><option value="0">--</option><option value="15">15 сек</option><option value="30">30 сек</option><option value="60">1 мин</option><option value="120">2 мин</option></select></td>
+
+<a href="javascript:;" rel="nofollow" onclick="document.querySelector('#mchatIfm2').src = '/mchat/?' + Date.now(); return false;" title="Обновить" class="mcReloadBtn"><img alt="" border="0" align="absmiddle" src="/.s/img/fr/mcr.gif" width="13" height="15"></a>-->
+<a href="javascript:;" rel="nofollow" onclick="new _uWnd('Sml', 'Полный список смайлов', -window.innerWidth * .5, -window.innerHeight * .5, { closeonesc:1 }, {url:'/index/35-1-2', } ); return false;" title="Вставить смайл" class="mcSmilesBtn"><img alt="" border="0" align="absmiddle" src="/.s/img/fr/mcs.gif" width="13" height="15"></a>
+
+<a href="javascript:;" rel="nofollow" onclick="window.open('/mchat/0-1', 'mchatCtrl', 'scrollbars=1,width='+(window.innerWidth*0.75)+',height=550,left=0,top=0'); return false;" title="Управление сообщениями" class="mcManageBtn"><img alt="" border="0" align="absmiddle" src="/.s/img/fr/mcm.gif" width="15" height="15"></a>
+</td></tr></table>
+
+
+
+
+
+
+
+<textarea name="mcmessage" class="mchat" id="mchatMsgF" title="Сообщение" onkeyup="countMessLength();" onfocus="countMessLength();" style="height:40px;width:100%;resize:none;"></textarea>
+<table border="0" cellpadding="1" cellspacing="1" width="100%">
+<tr><td><b id="jeuwu28">200</b></td><td align="right"><input type="submit" value="OK" class="mchat" id="mchatBtn" style="width:30px;"><img alt="" style="display:none;" id="mchatAjax" src="/.s/img/fr/ajax3.gif" border="0" width="16"/></td></tr>
+</table>
+
+	<input type="hidden" name="a"    value="18" />
+	<input type="hidden" name="ajax" value="1" id="ajaxFlag" />
+	<input type="hidden" name="numa" value="0" id="numa832" />
+</form>
+<script>initSel7174();</script>
+<!-- </bc> --></div>
+</div>
+</div>
+
+
+
+<!-- <block13> -->
+<div class="h-block">
+<div class="h-block-in">
+<div class="h-block-header"><!-- <bt> --><!--<s5204>-->Друзья сайта<!--</s>--><!-- </bt> --></div>
+<div class="h-block-content"><!-- <bc> --><!--<s1546>--><li><a href="http://blog.ucoz.ru/" target="_blank" rel="noopener nofollow">Официальный блог</a></li>
+<li><a href="http://forum.ucoz.ru/" target="_blank" rel="noopener nofollow">Сообщество uCoz</a></li>
+<li><a href="http://www.ucoz.ru/help/" target="_blank" rel="noopener nofollow">База знаний uCoz</a></li><!--</s>--><!-- </bc> --></div>
+</div>
+</div>
+<!-- </block13> --><!--/U1CLEFTER1Z-->
+</div>
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+<!--U1BFOOTER1Z--><div class="footer-promo">
+<div class="container">
+
+
+<div class="clr">
+ <div class="col4">
+
+<div class="hf-title">Помощь</div>
+
+<div class="hf-content">
+ <ul>
+ <li><a href="#"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Условия использования</a></li>
+ <li><a href="#"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Конфиденциальность</a></li>
+ <li><a href="#"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Юридическая информация</a></li>
+ <li><a href="#"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Вопросы и ответы</a></li>
+ <li><a href="#"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Обратная связь</a></li>
+ <li><a href="#" class="active"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Форум</a></li>
+ </ul>
+</div>
+
+ </div>
+ <div class="col4">
+
+<div class="hf-title">Специальные проекты</div>
+
+<div class="hf-content">
+ <ul>
+ <li><a href="#"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Путешествия</a></li>
+ <li><a href="#"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Россия в кадре</a></li>
+ <li><a href="#"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Домены и хостинг</a></li>
+ <li><a href="#"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Знакомства</a></li>
+ <li><a href="#"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Рекламная сеть</a></li>
+ </ul>
+</div>
+
+
+ </div>
+ <div class="col4">
+
+<div class="hf-title">Правовая информация</div>
+
+<div class="hf-content">
+ <ul>
+ <li><a href="#"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Условия использования</a></li>
+ <li><a href="#"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Конфиденциальность</a></li>
+ </ul>
+
+<div class="h-footer-social">
+ <a href="#" target="_blank" class="hf-vk"><i class="fa fa-vk"></i></a>
+ <a href="#" target="_blank" class="hf-tw"><i class="fa fa-twitter"></i></a>
+ <a href="#" target="_blank" class="hf-ok"><i class="fa fa-odnoklassniki"></i></a>
+ <a href="#" target="_blank" class="hf-fb"><i class="fa fa-facebook"></i></a>
+ <a href="#" target="_blank" class="hf-gp"><i class="fa fa-google-plus"></i></a>
+</div>
+
+</div>
+
+ </div>
+
+ <div class="col4">
+
+<div class="hf-desc">
+
+</div>
+
+ </div>
+</div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+</footer>
+
+</div><!--/U1BFOOTER1Z-->
+
+</body>
+</html>
+
+
+
+
+
+<!-- 0.10531 (s20) -->
